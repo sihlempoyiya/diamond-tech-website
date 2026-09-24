@@ -15,7 +15,8 @@
      <script src="https://kit.fontawesome.com/4ed702ed45.js" crossorigin="anonymous"></script>
     />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    <main class="flex-grow-1">
     <!-- navbar section -->
     <div class="container">
       <header
@@ -32,22 +33,22 @@
         </a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#Home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Features</a>
+            <a href="#About Us" class="nav-link">About us</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#Our-Products" class="nav-link">Our products</a></li>
           <li class="nav-item">
-            <a href="#" class="nav-link">FAQs</a>
+            
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
         </ul>
       </header>
     </div>
 
     <!-- Hero Section -->
-    <div class="container my-5">
+    <div id="Home"class="container my-5">
       <div
         class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
       >
@@ -86,7 +87,7 @@
       </div>
     </div>
      <!-- About section -->
-     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"> 
+     <div id="About-Us" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"> 
         <div class="col-md-6 p-lg-5 mx-auto my-5">
          <h1 class="display-3 fw-bold">About Us</h1> 
          <h3 class="fw-normal text-muted mb-3">Our business model is to partner with global ICT brands since 2018.Founded by Fortune Makoni, we are a proudly youth owned company.</h3> 
@@ -94,8 +95,8 @@
             <a class="icon-link" href="#">Contact us<svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> 
 </div>
    </div> 
-
-   <div class="container px-4 py-5" id="featured-3"> <h2 class="pb-2 border-bottom">Our Products</h2> 
+   <!--Our Products-->
+   <div id="Our-Products" class="container px-4 py-5" id="featured-3"> <h2 class="pb-2 border-bottom">Our Products</h2> 
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> 
         <div class="feature col">
              <i class="fa-solid fa-laptop fa-2x"></i>
@@ -111,19 +112,21 @@
  <p>We are a leading retailer of cellphones and tablets of the worlds leading brands such as Apple, Samsung, Huawei and many more. Our phones are either brand new or second hand.</p> 
 </div>
  <!--Contact us section-->
- <div class="container col-xl-10 col-xxl-8 px-4 py-5"> 
+ <div id="Contact" class="container col-xl-10 col-xxl-8 px-4 py-5"> 
     <div class="row align-items-center g-lg-5 py-5"> 
         <div class="col-lg-7 text-center text-lg-start"> 
-            <h2 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h2> 
-            <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> 
+            <h2 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contact us</h2> 
+            <p class="col-lg-10 fs-4">Reach out to us by filling in the contact form or send us an email on info@diamondtech.com.</p> 
         </div> <div class="col-md-10 mx-auto col-lg-5"> 
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"> 
             <div class="form-floating mb-3"> 
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> 
                 <label for="floatingInput">Email address</label> 
-            </div> <div class="form-floating mb-3"> 
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"> 
-                <label for="floatingPassword">Password</label> </div> 
+            </div> 
+           <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Enter your message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
                 <div class="checkbox mb-3"> 
                     <label> <input type="checkbox" value="remember-me"> Remember me
         </label> </div> 
@@ -132,7 +135,28 @@
  </form> 
 </div> 
 </div> 
-</div> 
+</div>
+</main>
+<footer class="bg-dark text-white py-4 mt-auto">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4">
+        <h5>Diamond Tech</h5>
+        <p>Printers, Cartridges, Cellphones & Tablets.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Links</h5>
+        <a href="#About-Us" class="text-white text-decoration-none d-block">About</a>
+        <a href="#Our-Products" class="text-white text-decoration-none d-block">Products</a>
+        <a href="#Contact" class="text-white text-decoration-none d-block">Contact</a>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p>info@diamondtech.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
